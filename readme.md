@@ -1,2 +1,4 @@
 
-Creating a new branch is quicI
+
+Creating a new branch is quic
+Creating a branch is quick and simple
