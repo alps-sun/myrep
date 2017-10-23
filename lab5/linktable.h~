@@ -28,6 +28,11 @@
 #define FAILURE (-1)
 
 /*
+ *  LinkTbale Type
+ */
+typedef struct LinkTable tLinkTable;
+
+/*
  * LinkTable Node Type
  */
 typedef struct LinkTableNode
@@ -35,16 +40,7 @@ typedef struct LinkTableNode
     struct LinkTableNode * pNext;
 }tLinkTableNode;
 
-/*
- * LinkTable Type
- */
-typedef struct LinkTable
-{
-    tLinkTableNode *pHead;
-    tLinkTableNode *pTail;
-    int	        SumOfNode;
-    pthread_mutex_t mutex;
-}tLinkTable;
+
 
 /*
  * Create a LinkTable

@@ -78,7 +78,7 @@ int ShowAllCmd(tLinkTable * head)
     return 0;
 }
 
-int InitMenuData
+int InitMenuData(tLinkTable ** ppLinkTable)
 {
     *ppLinkTable=CreateLinkTable();
     tDataNode* pNode=(tDataNode*)malloc(sizeof(tDataNode));

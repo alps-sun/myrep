@@ -136,7 +136,7 @@ int main()
    /* cmd line begins */
     while(1)
     {
-        char cmd[CMD_MAX_LEN];
+        char cmd[CMD_MAX_LEN];//局部变量
         printf("Input a cmd number > ");
         scanf("%s", cmd);
         tDataNode *p = FindCmd(head, cmd);

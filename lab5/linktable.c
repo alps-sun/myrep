@@ -26,6 +26,17 @@
 #include"linktable.h"
 
 /*
+ * LinkTable Type
+ */
+typedef struct LinkTable
+{
+    tLinkTableNode *pHead;
+    tLinkTableNode *pTail;
+    int	        SumOfNode;
+    pthread_mutex_t mutex;
+}tLinkTable;
+
+/*
  * Create a LinkTable
  */
 tLinkTable * CreateLinkTable()
@@ -146,7 +157,7 @@ tLinkTableNode * SearchLinkTableNode(tLinkTable *pLinkTable, int Conditon(tLinkT
         return NULL;
     }
     tLinkTableNode * pNode = pLinkTable->pHead;
-    while(pNode != NULL)//错误代码
+    while(pNode != NULL)
     {    
         if(Conditon(pNode,args) == SUCCESS)
         {
