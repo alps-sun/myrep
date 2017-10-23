@@ -128,7 +128,7 @@ int add()
     printf("x+y=%d",x+y);
     printf("\n");
 }
- sub()
+int sub()
 {
     int x,y;
     printf("please input two numbers x y:");
@@ -148,7 +148,7 @@ int mul()
 
 int divi()
 {
-int x,y;
+    int x,y;
     printf("please input two numbers x y:");
     scanf("%d %d", &x,&y);
     printf("x/y=%d",x/y);
